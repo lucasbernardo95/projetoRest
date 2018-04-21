@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ufrn.projeto.security;
+package com.ufrn.projeto.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;

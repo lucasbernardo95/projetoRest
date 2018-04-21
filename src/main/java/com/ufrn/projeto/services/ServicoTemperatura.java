@@ -30,7 +30,17 @@ import org.hibernate.criterion.Order;
  */
 @Path("/temperatura")
 public class ServicoTemperatura {
+    
+    @GET
+    @Path("/teste")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response teste() {
+        return Response
+                    .status(Response.Status.INTERNAL_SERVER_ERROR)
+                    .entity(new OutputMessage(500, "Teste funcionando"))
+                    .build();
 
+    }
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)

@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.rest</groupId>
+    <groupId>com.ufrn</groupId>
     <artifactId>projetoRest</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
@@ -104,6 +104,7 @@
             <version>0.7.0</version>
         </dependency>
         <!-- Fim JSON WEB TOKEN -->
+        
     </dependencies>
 
     <build>
@@ -111,10 +112,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.1</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
@@ -123,7 +124,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.1.1</version>
+                <version>2.3</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -131,7 +132,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.1</version>
+                <version>2.6</version>
                 <executions>
                     <execution>
                         <phase>validate</phase>
@@ -145,7 +146,7 @@
                                 <artifactItem>
                                     <groupId>javax</groupId>
                                     <artifactId>javaee-endorsed-api</artifactId>
-                                    <version>6.0</version>
+                                    <version>7.0</version>
                                     <type>jar</type>
                                 </artifactItem>
                             </artifactItems>
